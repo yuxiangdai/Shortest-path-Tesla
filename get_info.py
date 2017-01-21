@@ -19,4 +19,4 @@ def test():
     lon1 = -122.431297
     lat2 = 37.4931367
     lon2 = -121.9453883
-    print(get_info(lat1, lon1, lat2, lon2))
+    return(get_info(lat1, lon1, lat2, lon2))
