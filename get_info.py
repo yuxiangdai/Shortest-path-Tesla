@@ -18,7 +18,6 @@ def get_info(lat1, lon1, lat2, lon2):
 #37.4931367 -121.9453883
 
 def test():
-<<<<<<< HEAD
     coord_input_1 = map(float,raw_input('Enter your first coordinates:').split())
     print coord_input_1
     coord_input_2 = map(float,raw_input('Enter your second coordinates:').split())
@@ -30,10 +29,3 @@ def test():
     print get_info(lat1, lon1, lat2, lon2)
 
 test()
-=======
-    lat1 = 37.773972
-    lon1 = -122.431297
-    lat2 = 37.4931367
-    lon2 = -121.9453883
-    return(get_info(lat1, lon1, lat2, lon2))
->>>>>>> 07e4e8559b6e023e2ef7e180ee48199695c44cab
