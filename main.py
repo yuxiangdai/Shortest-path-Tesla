@@ -123,7 +123,7 @@ def Dijkstra():
         d_t['city'] = sta_info[t_id]['city']
         res.append(d_t)
         print(first_part + " " + str(t_id))
-    print(shortest_time[end_pt], total_dist[end_pt])
+    print("%.3f" % shortest_time[end_pt], "%.3f" % stotal_dist[end_pt])
     return res
 
 def path_finding(lat1, lon1, lat2, lon2):
