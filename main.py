@@ -266,13 +266,23 @@ for i in range(number_of_results):
 
 
 # Part 1
+'''
+coord_input = input('Enter your input:').split()
+coord_input = (float(coord_input[0]), float(coord_input[1]))
+print(coord_input)
+print_top_3(coord_input[0], coord_input[1])
+'''
+# Part 2
+'''
+start = input('Enter your input:').split()
+start = (float(start[0]), float(start[1]))
 
-# When it asks for input, paste this: 38.8977 -77.0365
-#coord_input = input('Enter your input:').split()
-#coord_input = (float(coord_input[0]), float(coord_input[1]))
-#print(coord_input)
-#print_top_3(coord_input[0], coord_input[1])
+end = input('Enter your input:').split()
+end = (float(end[0]), float(end[1]))
 
+dis, time = caching.request_google(start[0], start[1], end[0], end[1])
+print("%.3f" % dis, "%.2f" % time)
+'''
 # Part 4
 
 start = input('Enter your input:').split()
