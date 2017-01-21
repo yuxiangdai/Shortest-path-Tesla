@@ -14,9 +14,26 @@ def get_info(lat1, lon1, lat2, lon2):
             return(str(round(data['rows'][0]['elements'][0]['distance']['value']/1000.0,3))+' '+str(round(data['rows'][0]['elements'][0]['duration']['value']/3600.0,2)))
     raise Exception("Ran out of keys")
     
+#37.773972 -122.431297
+#37.4931367 -121.9453883
+
 def test():
+<<<<<<< HEAD
+    coord_input_1 = map(float,raw_input('Enter your first coordinates:').split())
+    print coord_input_1
+    coord_input_2 = map(float,raw_input('Enter your second coordinates:').split())
+    print coord_input_2
+    lat1 = coord_input_1[0]
+    lon1 = coord_input_1[1]
+    lat2 = coord_input_2[0]
+    lon2 = coord_input_2[1]
+    print get_info(lat1, lon1, lat2, lon2)
+
+test()
+=======
     lat1 = 37.773972
     lon1 = -122.431297
     lat2 = 37.4931367
     lon2 = -121.9453883
     return(get_info(lat1, lon1, lat2, lon2))
+>>>>>>> 07e4e8559b6e023e2ef7e180ee48199695c44cab
