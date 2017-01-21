@@ -11,8 +11,23 @@ Input coordinates on a single line when prompted:
 Enter your input: 38.8977 -77.0365
 ```
 ###### Part 2 
-###### Part 3 
+Input coordinates on single lines over two prompts:
+```
+Enter your input: 37.773972 -122.431297
+Enter your input: 37.4931367 -121.9453883
+```
+
 ###### Part 4
+Input coordinates on single lines over two prompts:
+```
+Enter your input: 37.773972 -122.431297
+Enter your input: 37.4931367 -121.9453883
+```
+###### Part 5
+Run mapscript.py and open the index.html file to view the map:
+```
+python3 mapscript.py
+```
 
 ## Modules/Libraries:
 - json - used to parse JSON
