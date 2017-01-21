@@ -6,7 +6,7 @@ with open('charging_stations.json') as data_file:
 
 # Take latitude and longitude of a point in decimal degrees, separated by a single space.
 # Sample data: 38.8977 -77.0365
-coord_input = input('Enter your input:').split()
+coord_input = raw_input('Enter your input:').split()
 coord_input = (float(coord_input[0]), float(coord_input[1]))
 print(coord_input)
 
