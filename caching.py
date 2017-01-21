@@ -14,11 +14,15 @@ def get_info(lat1, lon1, lat2, lon2):
     raise Exception("Ran out of keys")
     
 def test():
-    lat1 = 37.773972
-    lon1 = -122.431297
-    lat2 = 37.4931367
-    lon2 = -121.9453883
-    return(request_google(lat1, lon1, lat2, lon2))
+    coord_input_1 = map(float,raw_input('Enter your first coordinates:').split())
+    ##print coord_input_1
+    coord_input_2 = map(float,raw_input('Enter your second coordinates:').split())
+    ##print coord_input_2
+    lat1 = coord_input_1[0]
+    lon1 = coord_input_1[1]
+    lat2 = coord_input_2[0]
+    lon2 = coord_input_2[1]
+    print request_google(lat1, lon1, lat2, lon2)
 
 def request_google(lat1, lon1, lat2, lon2):
     try:
@@ -31,10 +35,11 @@ def request_google(lat1, lon1, lat2, lon2):
     if request_str not in cache:
         data = get_info(lat1,lon1,lat2,lon2)
         cache[request_str] = data
-        ##print ("new request")
+        print ("new request")
         with open('cache.json','w') as fp:
             json.dump(cache,fp)
     else:
-        data = cache[request_str]    
+        data = cache[request_str]
+        print("no cache")
     return data
 
