@@ -1,0 +1,240 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_ee7b46f2d88941e187db28388ca4794e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_ee7b46f2d88941e187db28388ca4794e" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_ee7b46f2d88941e187db28388ca4794e = L.map('map_ee7b46f2d88941e187db28388ca4794e', {
+                                           center:[37.773972,-122.431297],
+                                           zoom: 10,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_a6076ae66d0e4cd0b386ca3d6515102b = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_ee7b46f2d88941e187db28388ca4794e);
+
+        
+        
+            
+
+            var marker_2d7632a7f033439f8a25abb630667ebe = L.marker(
+                [37.773972,-122.431297],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ee7b46f2d88941e187db28388ca4794e);
+            
+        
+            
+
+                var icon_316a68f8373949ff93b26f76b7be2fd4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2d7632a7f033439f8a25abb630667ebe.setIcon(icon_316a68f8373949ff93b26f76b7be2fd4);
+            
+        
+            
+            var popup_7debf528689143569514c96039050698 = L.popup({maxWidth: '300'});
+
+            
+                var html_fb5363e226eb4c818b6855e1a23e0a4f = $('         <div id="html_fb5363e226eb4c818b6855e1a23e0a4f"                 style="width: 100.0%; height: 100.0%;">                 Start</div>                 ')[0];
+                popup_7debf528689143569514c96039050698.setContent(html_fb5363e226eb4c818b6855e1a23e0a4f);
+            
+
+            marker_2d7632a7f033439f8a25abb630667ebe.bindPopup(popup_7debf528689143569514c96039050698);
+
+            
+        
+        
+            
+
+            var marker_ceaed71a01f94f228109f42a5b5edcd6 = L.marker(
+                [39.3272037,-120.2064298],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ee7b46f2d88941e187db28388ca4794e);
+            
+        
+            
+
+                var icon_c7514e38ca6547ca90df0411f58c8905 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ceaed71a01f94f228109f42a5b5edcd6.setIcon(icon_c7514e38ca6547ca90df0411f58c8905);
+            
+        
+            
+            var popup_1c1ee92285c34370b8b2d3ae6c75e0b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_b5de9a66d8be421ba8b6448d7c1d3d80 = $('         <div id="html_b5de9a66d8be421ba8b6448d7c1d3d80"                 style="width: 100.0%; height: 100.0%;">                 Truckee</div>                 ')[0];
+                popup_1c1ee92285c34370b8b2d3ae6c75e0b0.setContent(html_b5de9a66d8be421ba8b6448d7c1d3d80);
+            
+
+            marker_ceaed71a01f94f228109f42a5b5edcd6.bindPopup(popup_1c1ee92285c34370b8b2d3ae6c75e0b0);
+
+            
+        
+        
+        
+        </script>
+        
