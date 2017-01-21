@@ -1,6 +1,11 @@
 # UTEK Programming 2017: Team 2 
 
 ## Installation Instructions:
+Install folium:
+```
+pip install folium
+```
+
 Install Python 3 and run:
 ```
 python3 main.py
