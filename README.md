@@ -24,10 +24,7 @@ Enter your input: 37.773972 -122.431297
 Enter your input: 37.4931367 -121.9453883
 ```
 ###### Part 5
-Run mapscript.py and open the index.html file to view the map:
-```
-python3 mapscript.py
-```
+Open the index.html file to view the map.
 
 ## Modules/Libraries:
 - json - used to parse JSON
