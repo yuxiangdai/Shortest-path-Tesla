@@ -1,7 +1,5 @@
 import urllib2
 import json
-from pprint import pprint
-
 
 def get_info(lat1, lon1, lat2, lon2):
     ## Make requests to Google API for the given latitudes and longitudes.
