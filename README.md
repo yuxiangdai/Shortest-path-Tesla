@@ -5,6 +5,10 @@ Install Python 3 and run:
 ```
 python3 main.py
 ```
+or
+```
+python main.py
+```
 ## Part 1
 Input coordinates on a single line when prompted:
 ```
