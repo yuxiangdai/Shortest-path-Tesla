@@ -1,6 +1,7 @@
 import json
 import caching
 
+
 with open('charging_stations.json') as data_file:    
     data = json.load(data_file)
 
@@ -123,7 +124,7 @@ def Dijkstra():
         d_t['city'] = sta_info[t_id]['city']
         res.append(d_t)
         print(first_part + " " + str(t_id))
-    print("%.3f" % shortest_time[end_pt], "%.3f" % stotal_dist[end_pt])
+    print("%.3f" % shortest_time[end_pt], "%.3f" % total_dist[end_pt])
     return res
 
 def path_finding(lat1, lon1, lat2, lon2):
@@ -159,7 +160,7 @@ for i in range(number_of_results):
 
 # Part 1
 print("Part 1:")
-coord_input = raw_input('Enter your input:').split()
+coord_input = input('Enter your input:').split()
 coord_input = (float(coord_input[0]), float(coord_input[1]))
 print(coord_input)
 print_top_3(coord_input[0], coord_input[1])
@@ -167,7 +168,7 @@ print_top_3(coord_input[0], coord_input[1])
 # Part 2
 
 print("Part 2:")
-start = raw_input('Enter your input:').split()
+start = input('Enter your input:').split()
 start = (float(start[0]), float(start[1]))
 
 end = input('Enter your input:').split()
@@ -188,7 +189,6 @@ end = (float(end[0]), float(end[1]))
 path_finding(start[0], start[1], end[0], end[1])
 
 import folium
-
 # Array of latitudes and longitudes found by the path-finding algorithm
 # Sample data:
 # 37.773972 -122.431297 Start 0
